@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Favicon reference for Stock icon (Icons8)-->
+    <link rel="icon" type="image/x-icon" href="./images/stock.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!--Imported Select Box Styling-->
+    <link rel="stylesheet" href="selectBox.css">
+    <!-- Bootstrap, JS, Popper, and jQuery imports-->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!--Page Title-->
+    <title>Stock Ticker</title>
+    <!--JavaScript Connection-->
+    <script src="ticker.js" defer></script>
+</head>
+<body>
+    <!-- Bootstrap navbar (from Bootstrap Documentation)-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Stock Ticker Website</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Homepage</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="stocks.html">Stocks</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="history.html">History</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Stocks content -->
+    <div class="container">
+        <!-- Stock Selection Header-->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 id="stockHeader">Stock Selection</h1>
+            </div>
+        </div>
+        <!-- Main Stock Art-->
+        <div class="row">
+          <div class="col-lg-12">
+            <img id="stockMarketImg" src="./images/stockMarketArt.png" alt="Clip Art Of A Stock Market Trend">
+          </div>
+        </div>
+    </div>
+    <div class="container white-border">
+        <!-- Selected Information Display-->
+        <div class="row">
+          <div class="col-lg-6">
+            <h3>Exchange: <span id="selectedExchange" class="chosen-span"></span></h3>
+          </div>
+          <div class="col-lg-6">
+            <h3>Stock: <span id="selectedStock" class="chosen-span"></span></h3>
+          </div>
+        </div>
+        <!-- Dropdown Menus & Buttons-->
+        <div class="row">
+            <div class="col-lg-6 centering">
+              <!--Stock Exchange Selection-->
+                <div class="dropdown centering">
+                    <button class="btn btn-blue dropdown-toggle" type="button" id="exchangeButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Select Stock Exchange
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="exchangeButton">
+                        <!-- <a class="dropdown-item exchange-list" value="BATY">Cboe BYX</a> -->
+                        <a class="dropdown-item exchange-list" value="BATS">Cboe BZX</a>
+                        <!-- <a class="dropdown-item exchange-list" value="EDGA">Cboe EDGA</a> -->
+                        <!-- <a class="dropdown-item exchange-list" value="EDGX">Cboe EDGX</a> -->
+                        <!-- <a class="dropdown-item exchange-list" value="CBSX">Cboe Stock Exchange</a> -->
+                        <a class="dropdown-item exchange-list" value="XNYS">Consolidated Tape Association</a>
+                        <!-- <a class="dropdown-item exchange-list" value="XADF">FINRA Alternative Display Facility</a> -->
+                        <!-- <a class="dropdown-item exchange-list" value="FINY">FINRA NYSE TRF</a>
+                        <a class="dropdown-item exchange-list" value="FINN">FINRA Nasdaq TRF Carteret</a>
+                        <a class="dropdown-item exchange-list" value="FINC">FINRA Nasdaq TRF Chicago</a> -->
+                        <!-- <a class="dropdown-item exchange-list" value="XISE">International Securities Exchange, LLC - Stocks</a> -->
+                        <!-- <a class="dropdown-item exchange-list" value="IEXG">Investors Exchange</a> -->
+                        <!-- <a class="dropdown-item exchange-list" value="LTSE">Long-Term Stock Exchange</a>
+                        <a class="dropdown-item exchange-list" value="EPRL">MIAX Pearl</a>
+                        <a class="dropdown-item exchange-list" value="MEMX">Members Exchange</a> -->
+                        <a class="dropdown-item exchange-list" value="XASE">NYSE American, LLC</a>
+                        <a class="dropdown-item exchange-list" value="ARCX">NYSE Arca, Inc.</a>
+                        <!-- <a class="dropdown-item exchange-list" value="XCHI">NYSE Chicago, Inc.</a> -->
+                        <!-- <a class="dropdown-item exchange-list" value="XCIS">NYSE National, Inc.</a> -->
+                        <a class="dropdown-item exchange-list" value="XNAS">Nasdaq</a>
+                        <!-- <a class="dropdown-item exchange-list" value="XBOS">Nasdaq OMX BX, Inc.</a> -->
+                        <!-- <a class="dropdown-item exchange-list" value="XPHL">Nasdaq Philadelphia Exchange LLC</a> -->
+                        <a class="dropdown-item exchange-list" value="XNYS">New York Stock Exchange</a>
+                        <!-- <a class="dropdown-item exchange-list" value="OOTC">OTC Equity Security</a> -->
+                        <a class="dropdown-item exchange-list" value="XNAS">Unlisted Trading Privileges</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div include="form-input-select()">
+                    <select required id="ticker-listing">
+                     <!-- This is how we can do "placeholder" options. note: "required" attribute is on the select -->
+                      <option class="ticker-selection" title="Select A Stock Exchange" value="" hidden>Select A Stock Exchange</option>
+                    </select>
+                </div>
+            </div>
+      </div>
+      <br> <br>
+      <div class="row">
+        <div class="col-lg-6 flexCenter">
+            <button id="detailsBtn" type="button" class="btn btn-blue">Details</button>
+        </div>
+        <div class="col-lg-6 flexCenter">
+            <button id="newsBtn" type="button" class="btn btn-blue">News</button>
+        </div>
+    </div>
+    </div>
+
+    <br> <br>
+
+    <div id="currentStockInfo">
+        <!-- A called stock's info will be displayed here -->
+    </div>
+</body>
+</html>
