@@ -41,7 +41,7 @@ The stock ticker application is a web application that utilizes the Polygon.io A
 
 ## 💰 Stock Ticker Features
 ### 🚀 HTML, Bootstrap, and CSS
-Nearly all websites now are built using some form of HTML5 and CSS3 to create a functional and visually appealing experience for an end user. This web application is no different, but I also utilized the Bootstrap framework to further build on my CSS ability to style my application. Bootstrap allows users to create forms and buttons in an aesthetically pleasing and standardized manner but also allows for responsive development that can account for any screen size. One prime example of this in my application is the navigation bar at the top becoming a "hamburger" collapsable menu when the screen size becomes small enough. The following screenshots display the different forms that my navigation bar can take depending on a user's screen size.<br><br>
+Nearly all websites now are built using some form of HTML5 and CSS3 to create a functional and visually appealing experience for an end user. This web application is no different, but I also utilized the Bootstrap framework to further build on my CSS ability to style my application. Bootstrap allows users to create forms and buttons in an aesthetically pleasing and standardized manner but also allows for responsive development that can account for any screen size. One prime example of this in my application is the navigation bar at the top becoming a "hamburger" collapsible menu when the screen size becomes small enough. The following screenshots display the different forms that my navigation bar can take depending on a user's screen size.<br><br>
 
 ![](https://github.com/NicholasJWheeler/Stock-Ticker/blob/main/Images/Bootstrap1.png?raw=true)
 <br><br>
